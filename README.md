@@ -7,7 +7,8 @@ Generate commit messages, streamline branch naming, and get intelligent suggesti
 
 ## 🔥 Features
 
-- **Smart Commit Messages**: Automatically generate meaningful commit messages from `git diff`.
+- **Smart Commit Messages**: Automatically generate meaningful commit messages.
+- **Branch Naming**: Automatically generates clean, descriptive branch names.
 - **Lightning Fast**: Runs locally or via GeminiAPI.
 - **More Featurs**: Coming soon
 
