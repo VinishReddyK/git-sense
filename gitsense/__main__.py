@@ -1,7 +1,7 @@
 # gitsense/cli.py
 import sys
-from .git_utils import GitOperations
-from .commit import CommitMessageGenerator
+from .features.git_utils import GitOperations
+from .features.commit import CommitMessageGenerator
 
 class CLI:
     def __init__(self):
