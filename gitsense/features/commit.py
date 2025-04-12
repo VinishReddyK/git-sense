@@ -2,8 +2,8 @@
 from .llm_provider import LLMProvider
 
 class CommitMessageGenerator:
-    def __init__(self, model=None):
-        self.llm = LLMProvider(model)
+    def __init__(self):
+        self.llm = LLMProvider()
     
     def generate(self, diff):
         system_msg = "You write great git commit messages. Keep them short (under 10 words if possible)."
