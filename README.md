@@ -54,7 +54,7 @@ pip3 install .
 Generate commits with:
 
 ```sh
-gitsense commit
+gitsense help
 ```
 
 > **Note**: You may need to add your Python environment's bin directory to your PATH if the command isn't recognized.
