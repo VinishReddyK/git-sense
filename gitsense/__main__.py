@@ -1,6 +1,6 @@
 # gitsense/cli.py
 import sys
-from .features.git_utils import GitOperations
+from .features.core.git_utils import GitOperations
 from .features.commit import CommitMessage
 
 class CLI:

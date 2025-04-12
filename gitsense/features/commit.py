@@ -1,6 +1,6 @@
 # gitsense/commit.py
-from .llm_provider import LLMProvider
-from .git_utils import GitOperations
+from .core.llm_provider import LLMProvider
+from .core.git_utils import GitOperations
 
 class CommitMessage:
     def __init__(self):
