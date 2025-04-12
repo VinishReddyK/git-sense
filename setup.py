@@ -4,17 +4,16 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setup(
-    name="gitsense",
+    name="GitSense",
     version="0.1.0",
-    author="Your Name",
-    author_email="your.email@example.com",
-    description="AI-powered Git assistant for smarter version control",
+    author="Vinish Reddy Kamireddy",
+    author_email="vinishreddy.k@gmail.com",
+    description="A CLI/desktop tool that uses AI to automate and enhance common Git workflows, making version control smarter and more intuitive.",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/yourusername/gitsense",
+    url="https://github.com/VinishReddyK/git-sense",
     packages=find_packages(exclude=["tests*"]),
     install_requires=[
-        "openai",
         "python-dotenv",
         "google-generativeai",
         "pyyaml",

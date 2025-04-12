@@ -2,7 +2,7 @@ import sys
 from .features.core.git_utils import GitOperations
 from .features.commit import CommitMessage
 
-class CLI:
+class GitSense:
     def __init__(self):
         self.git = GitOperations()
         self.commit = CommitMessage()
@@ -20,5 +20,5 @@ class CLI:
         return 1
 
 def main():
-    cli = CLI()
-    sys.exit(cli.run(sys.argv))
+    gitsense = GitSense()
+    sys.exit(gitsense.run(sys.argv))
