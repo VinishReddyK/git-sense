@@ -1,6 +1,6 @@
 from .core.llm_provider import LLMProvider
 from .core.git_utils import GitOperations
-
+from .core.config import Config
 class CommitMessage:
     def __init__(self):
         self.llm = LLMProvider()
@@ -23,11 +23,17 @@ class CommitMessage:
         print("\nSuggested commit message:")
         print(f"  {commit_message}")
 
-        confirm = input("\nUse this message? (y/n): ").strip().lower()
-        if confirm == 'y':
+        if(Config.get_settings().ask_confirmation):
+            confirm = input("\nUse this message? (y/n): ").strip().lower()
+            if confirm == 'y':
+                self.git.create_commit(commit_message)
+                print("Changes committed.")
+                return 0
+            else:
+                print("Commit canceled.")
+                return 1
+        else:
+            print("No confirmation needed, proceeding with commit.")
             self.git.create_commit(commit_message)
             print("Changes committed.")
             return 0
-        else:
-            print("Commit canceled.")
-            return 1
