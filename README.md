@@ -13,11 +13,12 @@ Generate commit messages, streamline branch naming, and get intelligent suggesti
 
 ## 🚀 Quick Start
 
-1. Install after you clone it:
+1. Install after you clone it (use pip3 if pip dosen't work):
    ```sh
    pip install .
    ```
 2. Usage
+   Note: you might have to add the path of python bin folder of the envirnment that you are using.
    ```sh
    gitsense commit
    ```
