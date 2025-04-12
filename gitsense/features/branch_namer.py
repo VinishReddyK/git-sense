@@ -22,7 +22,7 @@ class BranchNamer:
         return self.llm.ask(prompt, system_msg).strip()
 
     def create_branch(self, branch_name=None):
-        diff = self.git.get_unstaged_diff()  # Get working directory changes
+        diff = self.git.get_diff()  # Get working directory changes
         
         if not diff:
             print("No changes detected. Using default branch name.")

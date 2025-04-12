@@ -2,6 +2,13 @@ import subprocess
 
 class GitOperations:
     @staticmethod
+    def get_diff():
+        # Get git all diff
+        result = subprocess.run(["git", "diff", "HEAD"], 
+                              capture_output=True, text=True)
+        return result.stdout
+    
+    @staticmethod
     def get_staged_diff():
         # Get git diff of staged changes
         result = subprocess.run(["git", "diff", "--cached"], 

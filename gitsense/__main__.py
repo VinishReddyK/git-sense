@@ -26,7 +26,7 @@ class GitSense:
         print("Usage: gitsense <command> [options]")
         print("\nCommands:")
         print("  commit       Generate and commit changes based on staged changes")
-        print("  branch       Generate a branch name based on unstaged changes")
+        print("  branch       Generate a branch name based on all changes")
         print("  help         Show detailed help with options")
         return 1
 
