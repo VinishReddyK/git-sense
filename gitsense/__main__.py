@@ -8,6 +8,8 @@ class GitSense:
         self.commit = CommitMessage()
 
     def run(self, args):
+        if len(args) < 2:
+            return self._show_usage()
         command = args[1]
         if command == "commit":
             return self.commit._commit()
