@@ -3,7 +3,7 @@
 ### AI-powered Git enhancements for a smarter workflow
 
 GitSense supercharges your Git experience by automating repetitive tasks with AI.  
-Generate commit messages, streamline branch naming, and get intelligent suggestions— ight from your terminal.
+Generate commit messages, streamline branch naming, and get intelligent suggestions right from your terminal.
 
 ## 🔥 Features
 
