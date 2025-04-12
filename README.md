@@ -11,16 +11,49 @@ Generate commit messages, streamline branch naming, and get intelligent suggesti
 - **Lightning Fast**: Runs locally or via GeminiAPI.
 - **More Featurs**: Coming soon
 
-## 🚀 Quick Start
+# 🚀 Quick Start Guide
 
-1. Install after you clone it (use pip3 if pip dosen't work):
-   ```sh
-   pip install .
-   ```
-2. Usage
+## 🔑 1. Configuration
 
-   Note: you might have to add the path of python bin folder of the envirnment that you are using.
+### API Key Setup
 
-   ```sh
-   gitsense commit
-   ```
+1. **Get your Google AI Studio API key**:
+
+   - Visit [Google AI Studio](https://aistudio.google.com/apikey)
+   - Click on **"Get API key"** (top-right corner)
+   - Create and copy your API key
+
+2. **Configure your environment**:
+   - Open the `.env_example` file
+   - Replace `<KEY-HERE>` with your copied API key
+   - Rename the file to `.env`
+
+### ⚙️ Model Selection (Optional)
+
+- View available models: [Gemini API Models](https://ai.google.dev/gemini-api/docs/models)
+- To change the default model:
+  1. Edit `config.yaml`
+  2. Update the model name
+  3. Save the file
+
+## 📦 2. Installation
+
+After cloning the repository:
+
+```sh
+# Install the package
+pip install .
+
+# If you encounter issues, try:
+pip3 install .
+```
+
+## 🖥️ 3. Usage
+
+Generate commits with:
+
+```sh
+gitsense commit
+```
+
+> **Note**: You may need to add your Python environment's bin directory to your PATH if the command isn't recognized.

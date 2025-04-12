@@ -1,3 +1,4 @@
 # The following are the default values for the configuration file.
 
 ask_confirmation: false # Whether to ask for confirmation before executing commands
+model_name: gemini-1.5-flash

@@ -12,7 +12,7 @@ class LLMProvider:
         genai.configure(api_key=self.config["gemini"])
 
     def ask(self, prompt, system_prompt=None):
-        model = genai.GenerativeModel('gemini-1.5-flash')
+        model = genai.GenerativeModel(Config.get_settings().model_name)
         
         full_prompt = f"{system_prompt}\n\n{prompt}" if system_prompt else prompt
         
