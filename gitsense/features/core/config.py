@@ -8,7 +8,7 @@ from types import SimpleNamespace
 load_dotenv()
 
 class Config:
-    ROOT_DIR = Path(__file__).resolve().parents[3]
+    ROOT_DIR = Path(__file__).resolve().parents[2]
     CONFIG_FILE_PATH = ROOT_DIR / "config.yaml"
 
     @staticmethod

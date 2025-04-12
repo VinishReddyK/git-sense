@@ -24,17 +24,18 @@ Generate commit messages, streamline branch naming, and get intelligent suggesti
    - Create and copy your API key
 
 2. **Configure your environment**:
-   - Open the `.env_example` file
+   - Open the `.env_example` file in gitsense directory
    - Replace `<KEY-HERE>` with your copied API key
    - Rename the file to `.env`
 
-### ⚙️ Model Selection (Optional)
+### ⚙️ Model Selection and other settings (Optional)
 
 - View available models: [Gemini API Models](https://ai.google.dev/gemini-api/docs/models)
 - To change the default model:
-  1. Edit `config.yaml`
+  1. Edit `config.yaml` file in gitsense directory
   2. Update the model name
   3. Save the file
+  4. Note: you can change other settings in this file
 
 ## 📦 2. Installation
 
