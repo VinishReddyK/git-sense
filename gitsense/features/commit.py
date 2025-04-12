@@ -1,6 +1,7 @@
 from .core.llm_provider import LLMProvider
 from .core.git_utils import GitOperations
 from .core.config import Config
+
 class CommitMessage:
     def __init__(self):
         self.llm = LLMProvider()

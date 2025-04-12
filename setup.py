@@ -14,9 +14,10 @@ setup(
     url="https://github.com/yourusername/gitsense",
     packages=find_packages(exclude=["tests*"]),
     install_requires=[
-        "openai>=1.0.0",
-        "python-dotenv>=1.0.0",
-        "google-generativeai>=0.3.0",
+        "openai",
+        "python-dotenv",
+        "google-generativeai",
+        "pyyaml",
     ],
     entry_points={
         "console_scripts": [
