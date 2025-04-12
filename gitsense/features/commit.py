@@ -1,4 +1,3 @@
-# gitsense/commit.py
 from .core.llm_provider import LLMProvider
 from .core.git_utils import GitOperations
 
