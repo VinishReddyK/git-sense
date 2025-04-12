@@ -21,7 +21,7 @@ class CommitMessage:
             return 1
 
         commit_message = self.generate(diff)
-        print("\nSuggested commit message:")
+        print("Suggested commit message:")
         print(f"  {commit_message}")
 
         if(Config.get_settings().ask_confirmation):
