@@ -8,8 +8,7 @@ Generate commit messages, streamline branch naming, and get intelligent suggesti
 ## 🔥 Features
 
 - **Smart Commit Messages**: Automatically generate meaningful commit messages from `git diff`.
-- **Conflict Guidance**: Get AI-powered hints for resolving merge conflicts (In work).
-- **Lightning Fast**: Runs locally or via API (your choice).
+- **Lightning Fast**: Runs locally or via GeminiAPI.
 - **More Featurs**: Coming soon
 
 ## 🚀 Quick Start
